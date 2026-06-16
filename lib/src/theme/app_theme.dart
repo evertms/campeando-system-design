@@ -71,12 +71,11 @@ class AppTheme {
       ),
 
       // Information Containers
-      cardTheme: CardTheme(
-        color: colorScheme.surfaceContainerHighest, // Mapped for Filled variant
+      cardTheme: CardThemeData(
+        color: colorScheme.surfaceContainerHighest,
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
-          side: BorderSide.none,
         ),
         clipBehavior: Clip.antiAlias,
       ),
