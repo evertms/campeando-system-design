@@ -6,7 +6,8 @@ class AppTheme {
   static const Color primarySeed = Color(0xFF344E41);
   static const Color secondaryColor = Color(0xFF3A5A40);
   static const Color tertiaryColor = Color(0xFF588157);
-  static const Color surfaceColor = Color(0xFFDAD7CD);
+  static const Color surfaceColor = Colors.white;
+  static const Color surfaceContainerColor = Color(0xFFDAD7CD);
   static const Color onSurfaceVariantColor = Color(0xFFA3B18A);
 
   static ThemeData get lightTheme {
@@ -16,6 +17,7 @@ class AppTheme {
       secondary: secondaryColor,
       tertiary: tertiaryColor,
       surface: surfaceColor,
+      surfaceContainer: surfaceContainerColor,
       brightness: Brightness.light,
     );
 
