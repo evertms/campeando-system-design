@@ -10,8 +10,8 @@
 // **************************************************************************
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:campeando_system_design/src/components/ejemplo_button.usecase.dart'
-    as _campeando_system_design_src_components_ejemplo_button_usecase;
+import 'package:campeando_system_design/src/components/campeando_button.usecase.dart'
+    as _campeando_system_design_src_components_campeando_button_usecase;
 import 'package:widgetbook/widgetbook.dart' as _widgetbook;
 
 final directories = <_widgetbook.WidgetbookNode>[
@@ -19,19 +19,31 @@ final directories = <_widgetbook.WidgetbookNode>[
     name: 'components',
     children: [
       _widgetbook.WidgetbookComponent(
-        name: 'EjemploButton',
+        name: 'CampeandoButton',
         useCases: [
-          _widgetbook.WidgetbookUseCase(
-            name: 'Default',
-            builder:
-                _campeando_system_design_src_components_ejemplo_button_usecase
-                    .buildEjemploButtonDefaultUseCase,
-          ),
           _widgetbook.WidgetbookUseCase(
             name: 'Disabled',
             builder:
-                _campeando_system_design_src_components_ejemplo_button_usecase
-                    .buildEjemploButtonDisabledUseCase,
+                _campeando_system_design_src_components_campeando_button_usecase
+                    .buildCampeandoButtonDisabledUseCase,
+          ),
+          _widgetbook.WidgetbookUseCase(
+            name: 'Primary',
+            builder:
+                _campeando_system_design_src_components_campeando_button_usecase
+                    .buildCampeandoButtonPrimaryUseCase,
+          ),
+          _widgetbook.WidgetbookUseCase(
+            name: 'Secondary',
+            builder:
+                _campeando_system_design_src_components_campeando_button_usecase
+                    .buildCampeandoButtonSecondaryUseCase,
+          ),
+          _widgetbook.WidgetbookUseCase(
+            name: 'Tertiary',
+            builder:
+                _campeando_system_design_src_components_campeando_button_usecase
+                    .buildCampeandoButtonTertiaryUseCase,
           ),
         ],
       ),
